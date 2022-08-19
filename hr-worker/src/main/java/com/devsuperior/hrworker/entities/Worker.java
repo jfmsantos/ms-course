@@ -27,10 +27,10 @@ public class Worker implements Serializable {
 		return Id;
 	}
 
-	public Worker(Long id, String nome, Double dailyIncome) {
+	public Worker(Long id, String name, Double dailyIncome) {
 		super();
 		Id = id;
-		this.name = nome;
+		this.name = name;
 		this.dailyIncome = dailyIncome;
 	}
 
@@ -38,12 +38,12 @@ public class Worker implements Serializable {
 		Id = id;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String nome) {
-		this.name = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Double getDailyIncome() {
@@ -53,6 +53,4 @@ public class Worker implements Serializable {
 	public void setDailyIncome(Double dailyIncome) {
 		this.dailyIncome = dailyIncome;
 	}
-	
-	
 }
