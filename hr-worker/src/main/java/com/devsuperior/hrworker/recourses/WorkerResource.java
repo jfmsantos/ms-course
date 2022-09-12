@@ -22,12 +22,9 @@ import com.devsuperior.hrworker.repositories.WorkerRepository;
 public class WorkerResource {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkerRepository.class);
-
-//	@Value("${test.config}")
-//	private String testCongif;
 	
-	@Autowired
-	private Environment env2;
+//	@Autowired
+//	private Environment env2;
 
 	@Autowired
 	private Environment env;
@@ -37,7 +34,7 @@ public class WorkerResource {
 
 	@GetMapping(value = "/configs")
 	public ResponseEntity<Void> getConfigs() {
-		logger.info("CONFIG = " + env2.getProperty("test.config"));
+		//logger.info("CONFIG = " + env2.getProperty("test.config"));
 		return ResponseEntity.noContent().build();
 	}
 
