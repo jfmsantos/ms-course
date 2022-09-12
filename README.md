@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  Projeto Worker
+  Projeto Worker - Docker
 </h1>
 
 
